@@ -1,7 +1,4 @@
 import cv2
-import numpy as np
-import os
-#from matplotlib import pyplot as plt
 from math import sqrt
 
 def calc_distance(p1, p2):
@@ -99,9 +96,4 @@ def run_ccoeff_normed(image, template, verbose=False):
     return top_left, bottom_right
 
 
-def draw_blue_circle(event, x, y, flags, image):
-    if event == cv2.EVENT_LBUTTONDBLCLK:
-        center = (100, 100)
-        radius = calc_distance((x, y), center)
-        cv2.circle(image, center, radius, (255, 0, 0), 2)
-        print("DRAW")
+def calculate_distance(,width=960, height=540)
